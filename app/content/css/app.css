@@ -563,6 +563,9 @@
   .menu ul li a {
     font-size: 40px !important; } }
 
+::-webkit-scrollbar {
+  width: 0px; }
+
 .main-title {
   color: #fff;
   font-size: 4rem;
