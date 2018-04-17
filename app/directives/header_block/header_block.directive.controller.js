@@ -6,10 +6,19 @@
         .module('app')
         .controller('HeaderBlockController', HeaderBlockController);
 
-    HeaderBlockController.$inject = ['$state'];
+    HeaderBlockController.$inject = ['$state', '$rootScope'];
 
-    function HeaderBlockController($state) {
+    function HeaderBlockController($state, $rootScope) {
         let vm = this;
+
+        // vm.test = test;
+
+        // function test() {
+        //
+        //     $('.menu_open').addClass('active_menu_open');
+        //     // $rootScope.menu = true;
+        //     console.log($rootScope.menu);
+        // }
 
     }
 })();

@@ -21,6 +21,20 @@
 
         function link(scope, element, attrs) {
             $(document).ready(function () {
+
+                // mobile_menu
+
+                $("#menu_open").on('click','button', function () {
+                    console.log('hiiiiii');
+                    // $('.menu_open').addClass('active_menu_open')
+                });
+                // $('.menu-close').click(function () {
+                //     // $('.menu_open').removeClass('active_menu_open')
+                // });
+
+
+                //scroll effect on homepage
+
                 $("#anchor").on("click", "a", function (event) {
 
                     event.preventDefault();
@@ -36,6 +50,8 @@
                     $('body,html').animate({scrollTop: top}, 1000);
                 });
 
+                //last section effect and scroll on pages
+
                 window.onload = init();
 
                 function init() {
@@ -50,8 +66,6 @@
                     $(window).scroll(function () {
 
                         var wScroll = $(this).scrollTop();
-
-
 
 
                         if( index !== null){
@@ -87,14 +101,7 @@
                 }
 
 
-                $('.header-site-content-media-menu-button').click(function () {
-                    console.log('hiiiiii');
-                    $('.menu').addClass('active')
-                });
-                $('.menu-close').click(function () {
-                    $('.menu').removeClass('active')
-                });
-
+                // accordion effect
 
                 var acc = document.getElementsByClassName("accordion");
                 var i;
@@ -111,12 +118,7 @@
                     });
                 }
 
-
-
             });
-
-
-
 
         }
     }

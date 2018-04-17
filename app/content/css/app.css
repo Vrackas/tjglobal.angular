@@ -978,10 +978,10 @@
       width: 300px !important; }
     .e-commerce .content .about div .panel {
       box-sizing: border-box;
-      width: 300px !important;
+      width: 280px !important;
       padding: 0; }
       .e-commerce .content .about div .panel p {
-        width: 300px !important; } }
+        width: 280px !important; } }
 
 .legal_opinion .content .content-container {
   height: 70vh;
@@ -1626,10 +1626,12 @@
     position: absolute;
     left: 50%;
     margin-left: -125px;
-    margin-top: 0 !important; }
+    margin-top: 0 !important;
+    width: 215px !important; }
     header .header-site-content .header-site-content-logo .main-title {
       font-size: 50px !important; }
     header .header-site-content .header-site-content-logo a div {
+      width: 205px !important;
       margin-top: 0 !important; }
   header .header-site-content .header-site-content-media-menu {
     margin-right: 2px !important;
@@ -1797,7 +1799,7 @@
     footer .footer-site-bottom {
       margin-bottom: 10px !important; } }
 
-.menu {
+.menu div.menu_open {
   height: 100vh;
   width: 100%;
   z-index: 99999;
@@ -1805,26 +1807,30 @@
   background: rgba(0, 0, 0, 0.8);
   overflow: hidden;
   display: none; }
-  .menu .menu-close {
+  .menu div.menu_open .menu-close {
     border: none;
     background: transparent;
     font-size: 65px;
     float: right;
     position: absolute;
     right: 1%; }
-    .menu .menu-close svg {
+    .menu div.menu_open .menu-close svg {
       color: white; }
-  .menu ul {
+  .menu div.menu_open ul {
     list-style-type: none;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: stretch;
     height: 60vh; }
-    .menu ul li {
+    .menu div.menu_open ul li {
       text-align: center; }
-      .menu ul li a {
-        font-size: 50px; }
+      .menu div.menu_open ul li a {
+        font-size: 50px;
+        color: white; }
+
+.menu .active_menu_open {
+  display: block !important; }
 
 @media (min-width: 540px) and (max-width: 768px) {
   .menu ul li a {
@@ -1853,6 +1859,9 @@
 
 .top_button .active_top_button {
   opacity: 1 !important; }
+
+body {
+  background: white; }
 
 ::-webkit-scrollbar {
   width: 0px; }
