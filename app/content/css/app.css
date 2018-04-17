@@ -1836,6 +1836,24 @@
   .menu ul li a {
     font-size: 40px !important; } }
 
+.top_button div.top_button_click {
+  z-index: 10000;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #ff3750;
+  height: 40px;
+  width: 40px;
+  border-radius: 20px;
+  opacity: 0;
+  transition: 0.8s all; }
+  .top_button div.top_button_click svg {
+    color: white;
+    font-size: 30px; }
+
+.top_button .active_top_button {
+  opacity: 1 !important; }
+
 ::-webkit-scrollbar {
   width: 0px; }
 

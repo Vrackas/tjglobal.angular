@@ -1,0 +1,21 @@
+.top_button {
+  div.top_button_click{
+    z-index: 10000;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #ff3750;
+    height: 40px;
+    width: 40px;
+    border-radius: 20px;
+    opacity: 0;
+    transition: 0.8s all;
+    svg {
+      color: white;
+      font-size: 30px;
+    }
+  }& .active_top_button{
+     opacity: 1 !important;
+   }
+
+}

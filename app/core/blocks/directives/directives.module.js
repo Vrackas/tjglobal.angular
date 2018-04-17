@@ -6,6 +6,7 @@
         'app.footer',
         'app.mobile_menu',
         'app.effect',
+        'app.top_button',
 
     ]);
 
