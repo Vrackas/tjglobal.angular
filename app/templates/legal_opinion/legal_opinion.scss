@@ -1,0 +1,152 @@
+.legal_opinion{
+
+//content
+
+  .content {
+    .content-container {
+      height: 70vh;
+      width: 100%;
+      background: white;
+    }
+    & .head {
+      div#anchor {
+        position: absolute;
+        top: 30%;
+        left: 25%;
+        width: 600px;
+        h1 {
+          color: #303030;
+          position: absolute;
+          font-size: 90px;
+          font-weight: 600;
+
+        }
+        a {
+          text-decoration: none;
+          color: #303030;
+          font-size: 60px;
+          position: absolute;
+          padding-top: 200px;
+        }
+      }
+    }
+    & .background {
+      background: {
+        image: url('../../content/img/legal-opinions.jpg');
+        size: cover;
+        repeat: no-repeat;
+        attachment: fixed;
+      }
+    }
+    & .about {
+      height: auto;
+      div{
+        margin-top: 140px;
+        p {
+          width: 1000px;
+          margin: 70px auto;
+          text-align: justify;
+          font: {
+            family: "Relative Bold", sans-serif;
+            size: 16px;
+            weight: 500;
+          }
+          letter-spacing: 1px;
+          line-height: 30px;
+        }
+      }
+
+
+    }
+
+  }
+
+  //media
+
+  @media (min-width: 1500px){
+
+  }
+
+  @media (min-width: 1200px) and (max-width: 1499px){
+
+  }
+
+  @media (min-width: 992px) and (max-width: 1199px){
+      .content{
+        .head{
+          #anchor{
+
+          }
+        }
+        .about{
+          p{
+            width: 900px !important;
+          }
+        }
+
+      }
+  }
+
+  @media (min-width: 768px) and (max-width: 992px){
+      .content{
+        .head{
+          #anchor{
+            width: auto !important;
+            h1{
+              font-size: 60px!important;
+            }
+          }
+        }
+        .about{
+          p{
+            width: 730px !important;
+          }
+        }
+
+      }
+  }
+
+  @media (min-width: 540px) and (max-width: 768px){
+      .content{
+        .head{
+          #anchor{
+            width: auto !important;
+            h1{
+              font-size: 60px!important;
+            }
+          }
+        }
+        .about{
+
+          p{
+            width: 530px !important;
+          }
+        }
+
+      }
+  }
+
+  @media (max-width: 540px) {
+      .content{
+        .head{
+          #anchor{
+            width: auto !important;
+            h1{
+              font-size: 60px!important;
+            }
+          }
+        }
+        .background{
+          background-attachment: scroll !important;
+        }
+        .about{
+          //height: 600px;
+          p{
+            width: 300px !important;
+          }
+        }
+
+      }
+  }
+
+}

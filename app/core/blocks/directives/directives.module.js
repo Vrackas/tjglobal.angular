@@ -5,6 +5,7 @@
         'app.header',
         'app.footer',
         'app.mobile_menu',
+        'app.effect',
 
     ]);
 

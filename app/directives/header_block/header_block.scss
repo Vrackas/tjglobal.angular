@@ -9,9 +9,19 @@
   .header-site-content {
     .header-site-content-logo {
       float: left;
-      width: 250px;
-      img{
-        width: 250px;
+      width: 270px;
+      a{
+        margin-top: 0;
+        margin-left: 10px;
+        div {
+          float: left;
+          background: {
+            image: url("../../content/img/logo_black.png");
+            size: cover;
+          }
+          height: 90px;
+          width: 250px;
+        }
       }
     }
     .header-site-content-media-menu {
@@ -21,7 +31,7 @@
       float: right;
       margin-top: 15px;
       margin-right: 30px;
-      .header-site-content-media-menu-button{
+      .header-site-content-media-menu-button {
         border: none;
         background: transparent;
         font-size: 55px;
@@ -41,7 +51,7 @@
           display: block;
           margin-top: 15px;
           transition: .3s;
-          color: #303030;
+          color: #303030 ;
           //a:[href=''] {
           //
           //}
@@ -80,11 +90,11 @@
 }
 
 @media (min-width: 992px) and (max-width: 1200px) {
-    header.header-site {
-      .header-site-content-media-menu {
-        display: none !important;
-      }
+  header.header-site {
+    .header-site-content-media-menu {
+      display: none !important;
     }
+  }
 }
 
 @media (min-width: 768px) and (max-width: 992px) {
@@ -141,12 +151,19 @@
         .main-title {
           font-size: 50px !important;
         }
-        img {
-          position: absolute;
-          left: 50%;
-          margin-left: -125px;
-          margin-top: 0 !important;
+        position: absolute;
+        left: 50%;
+        margin-left: -125px;
+        margin-top: 0 !important;
+        a{
+          div{
+            margin-top: 0 !important;
+          }
         }
+
+      }
+      .header-site-content-logo>div{
+
       }
       .header-site-content-media-menu {
 

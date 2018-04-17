@@ -1,0 +1,173 @@
+.company{
+
+  //content
+
+  .content {
+    .content-container {
+      height: 70vh;
+      width: 100%;
+      background: white;
+    }
+    & .head {
+      div#anchor{
+        position: absolute;
+        top: 30%;
+        left: 25%;
+        h1 {
+          color: #303030;
+          position: absolute;
+          font-size: 90px;
+          font-weight: 600;
+        }
+        a{
+          text-decoration: none;
+          color: #303030;
+          font-size: 60px;
+          position: absolute;
+          padding-top: 200px;
+        }
+      }
+    }
+    & .background {
+      background: {
+        image: url('../../content/img/company.jpg');
+        size: cover;
+        repeat: no-repeat;
+        attachment: fixed;
+      }
+    }
+    & .spreadsheet {
+      height: auto;
+      table {
+        width: 1000px;
+        margin: 70px auto 0;
+        border: 2px solid #303030;
+        border-radius: 5px;
+        background: #303030;
+        font: {
+          family: "Roboto", sans-serif;
+
+        }
+        tbody{
+          background: white;
+          tr{
+            th{
+              background: #303030;
+              color: white;
+            }
+            td{
+              padding-left: 15px;
+            }
+          }
+        }
+        p{
+
+        }
+      }
+    }
+    .spreadsheet>p{
+      width: auto;
+      padding:0 30px;
+      text-align: center;
+      font: {
+        family: "Relative Bold", sans-serif;
+        size: 16px;
+        weight: 500;
+      }
+      letter-spacing: 1px;
+      line-height: 30px;
+    }
+
+  }
+
+
+  //media
+
+  @media (min-width: 1500px){
+
+
+  }
+
+  @media (min-width: 1200px) and (max-width: 1499px){
+
+  }
+
+  @media (min-width: 992px) and (max-width: 1199px){
+
+      .content{
+        .spreadsheet{
+          table{
+            width: 900px!important;
+          }
+          //p{
+          //  width: 900px!important;
+          //}
+        }
+      }
+
+  }
+
+  @media (min-width: 768px) and (max-width: 992px){
+
+      .content{
+        .spreadsheet{
+          table{
+            width: 750px!important;
+          }
+        }
+        .spreadsheet>p{
+          text-align: justify;
+        }
+      }
+
+  }
+
+  @media (min-width: 540px) and (max-width: 768px){
+      .content{
+        .spreadsheet{
+          table{
+            width: 530px!important;
+          }
+        }
+        .spreadsheet>p{
+          text-align: justify;
+        }
+
+      }
+  }
+
+  @media (max-width: 540px) {
+      .content{
+        .head{
+          #anchor{
+            h1{
+              font-size: 50px!important;
+            }
+          }
+        }
+        .background{
+          background-attachment: scroll !important;
+        }
+        .spreadsheet{
+          height: auto;
+          table{
+            width: 320px!important;
+            font-size: 9px !important;
+            td{
+              //word-break: break-word;
+              padding: 0!important;
+            }
+          }
+          //p{width: 320px!important;}
+
+        }
+        .spreadsheet>p{
+          text-align: center;
+          padding: 0 !important;
+          margin: auto !important;
+          width: 280px!important;
+
+        }
+      }
+  }
+}

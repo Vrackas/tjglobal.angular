@@ -1,0 +1,235 @@
+.e-commerce{
+
+  //content
+
+  .content {
+    .content-container {
+      height: 70vh;
+      width: 100%;
+      background: white;
+    }
+    & .head {
+      div#anchor {
+        position: absolute;
+        top: 25%;
+        left: 25%;
+        width: 740px;
+        h1 {
+          color: #303030;
+          position: absolute;
+          font-size: 90px;
+          font-weight: 600;
+
+        }
+        a {
+          text-decoration: none;
+          color: #303030;
+          font-size: 60px;
+          position: absolute;
+          padding-top: 150px;
+        }
+      }
+    }
+    & .background {
+      background: {
+        image: url('../../content/img/psp.jpg');
+        size: cover;
+        repeat: no-repeat;
+        attachment: fixed;
+      }
+    }
+    & .about {
+      height: auto;
+      div {
+        width: 1000px;
+        margin: 0 auto;
+        p, strong {
+          font: {
+            size: 16px;
+            family: 'Relative Bold', Arial, sans-serif;
+          }
+          word-spacing: 5px;
+          line-height: 20px;
+          color: #303030;
+          text-align: justify;
+        }
+        strong {
+          text-align: center;
+        }
+        .accordion {
+          background-color: transparent;
+          color: #303030;
+          cursor: pointer;
+          padding: 18px;
+          width: 1000px;
+          margin: 30px auto;
+          border: none;
+          text-align: left;
+          outline: none;
+          transition: 0.6s;
+          border-bottom: 2px solid #303030;
+          padding-bottom: 7px;
+          font-size: 25px;
+          line-height: 1.2;
+          font-family: 'Relative Bold', Arial, sans-serif;
+          font-weight: 400;
+        }
+
+        .active, .accordion:hover {
+          border-bottom: 2px solid #ff3750;
+          color: #ff3750;
+          font-size: 28px;
+        }
+
+        .panel {
+          padding: 0 18px;
+          background-color: white;
+          max-height: 0;
+          overflow: hidden;
+          transition: max-height 0.5s ease-out;
+        }
+
+      }
+
+    }
+    .about > div {
+      margin: 70px auto;
+    }
+
+  }
+
+  //media
+
+  @media (min-width: 1500px) {
+
+  }
+
+  @media (min-width: 1200px) and (max-width: 1499px) {
+
+  }
+
+  @media (min-width: 992px) and (max-width: 1199px) {
+      .content {
+        .about {
+          div {
+            width: 900px !important;
+
+            .accordion {
+              width: 900px !important;
+            }
+            .panel {
+              width: 900px !important;
+              p {
+                width: 900px !important;
+              }
+            }
+
+          }
+
+        }
+      }
+  }
+
+  @media (min-width: 768px) and (max-width: 992px) {
+      .content {
+        .head{
+          #anchor{
+            width: 550px !important;
+            h1{
+              font-size: 70px !important;
+            }
+          }
+        }
+        .about {
+          div {
+            margin: 70px auto;
+            width: 730px !important;
+
+            .accordion {
+              width: 730px !important;
+            }
+            .panel {
+              box-sizing: border-box;
+              width: 730px !important;
+              p {
+                width: 730px !important;
+              }
+            }
+          }
+
+        }
+      }
+  }
+
+  @media (min-width: 540px) and (max-width: 768px) {
+      .content {
+        .head{
+          #anchor{
+            width: auto !important;
+            h1{
+              font-size: 50px !important;
+            }
+          }
+        }
+        .about {
+          div {
+            margin: 70px auto;
+            width: 530px !important;
+
+            .accordion {
+              width: 530px !important;
+            }
+            .panel {
+              box-sizing: border-box;
+              width: 530px !important;
+              p {
+                width: 530px !important;
+              }
+            }
+          }
+
+        }
+      }
+  }
+
+  @media (max-width: 540px) {
+      .content {
+        .head{
+          #anchor{
+            width: auto !important;
+            top: 20% !important;
+            h1{
+              font-size: 50px !important;
+            }
+            a{
+              padding-top: 190px !important;
+            }
+          }
+        }
+        .background{
+          background-attachment: scroll !important;
+        }
+        .about {
+          div {
+            margin: 70px auto;
+            width: 300px !important;
+
+            .accordion {
+              width: 300px !important;
+            }
+            .panel {
+              box-sizing: border-box;
+              width: 300px !important;
+              padding: 0;
+              p {
+                width: 300px !important;
+              }
+            }
+          }
+
+        }
+      }
+  }
+
+
+}

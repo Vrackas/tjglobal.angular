@@ -26,7 +26,39 @@
     margin: 0;
     background: white;
     box-sizing: inherit;
-
+  header-block{
+    header{
+      background: transparent;
+      .header-site-content{
+        .header-site-content-logo{
+          a{
+            div{
+              margin-top: 10px;
+              background: {
+                image: url("/content/img/logo_white.png");
+              };
+            }
+          }
+        }
+        .header-site-content-media-menu{
+          button{
+            svg{
+              color: white !important;
+            }
+          }
+        }
+        .header-site-content-menu{
+          ul{
+            li{
+              a{
+                color: white !important;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
 
     .content {
 
@@ -192,6 +224,7 @@
                 word-spacing: 6px;
               }
               a {
+                color: white;
                 padding: 5px;
                 border: 2px solid #ffffff;
               }

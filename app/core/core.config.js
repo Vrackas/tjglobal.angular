@@ -22,26 +22,79 @@
                 templateUrl: 'templates/homepage/homepage.html',
                 controller: 'HomepageController',
                 controllerAs: 'vm',
-                // resolve: {
-                //     data: function (weather) {
-                //         return weather.get({
-                //                 q: 'Poltava,UA',
-                //                 appid: '264a4855a3aeeb5196ff38e3d006cbe9',
-                //                 mode: 'json',
-                //                 units: 'metric'
-                //             })
-                //             .then(function (res) {
-                //                 return res;
-                //             })
-                //     }
-                // }
             })
-            // .state('login', {
-            //     url: '/login',
-            //     templateUrl: 'templates/login/login.html',
-            //     controller: 'LoginController',
-            //     controllerAs: 'vm',
-            // })
+            .state('about_us', {
+                url: '/about_us',
+                templateUrl: 'templates/about_us/about_us.html',
+                controller: 'AboutUsController',
+                controllerAs: 'vm',
+            })
+            .state('company', {
+                url: '/company',
+                templateUrl: 'templates/company/company.html',
+                controller: 'CompanyController',
+                controllerAs: 'vm',
+            })
+            .state('banks', {
+                url: '/banks',
+                templateUrl: 'templates/banks/banks.html',
+                controller: 'BanksController',
+                controllerAs: 'vm',
+            })
+            .state('contacts', {
+                url: '/contacts',
+                templateUrl: 'templates/contacts/contacts.html',
+                controller: 'ContactsController',
+                controllerAs: 'vm',
+            })
+            .state('forex', {
+                url: '/forex',
+                templateUrl: 'templates/forex/forex.html',
+                controller: 'ForexController',
+                controllerAs: 'vm',
+            })
+            .state('e-commerce', {
+                url: '/e-commerce',
+                templateUrl: 'templates/e-commerce/e-commerce.html',
+                controller: 'ECommerceController',
+                controllerAs: 'vm',
+            })
+            .state('license', {
+                url: '/license',
+                templateUrl: 'templates/license/license.html',
+                controller: 'LicenseController',
+                controllerAs: 'vm',
+            })
+            .state('legal_opinion', {
+                url: '/legal_opinion',
+                templateUrl: 'templates/legal_opinion/legal_opinion.html',
+                controller: 'LegalOpinionController',
+                controllerAs: 'vm',
+            })
+            .state('condition', {
+                url: '/condition',
+                templateUrl: 'templates/condition/condition.html',
+                controller: 'ConditionController',
+                controllerAs: 'vm',
+            })
+            .state('policy', {
+                url: '/policy',
+                templateUrl: 'templates/policy/policy.html',
+                controller: 'PolicyController',
+                controllerAs: 'vm',
+            })
+            .state('policy_company', {
+                url: '/policy_company',
+                templateUrl: 'templates/policy_company/policy_company.html',
+                controller: 'PolicyCompanyController',
+                controllerAs: 'vm',
+            })
+            .state('kyc', {
+                url: '/kyc',
+                templateUrl: 'templates/kyc/kyc.html',
+                controller: 'KYCController',
+                controllerAs: 'vm',
+            })
 
 
     }
