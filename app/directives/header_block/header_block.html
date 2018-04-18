@@ -1,10 +1,13 @@
 <header class="header-site">
     <div class="header-site-content">
         <div class="header-site-content-logo">
-            <a  class="main-title "><div ui-sref="home"></div></a>
+            <a class="main-title ">
+                <div ui-sref="home"></div>
+            </a>
         </div>
         <div class="header-site-content-media-menu">
-            <button class="header-site-content-media-menu-button" ng-click="vm.test()" id="menu_open"><i class="fas fa-bars" ></i></button>
+            <button class="header-site-content-media-menu-button active_menu_open"
+                    ng-click="vm.showMenu()" id="menu_open"><i class="fas fa-bars"></i></button>
             <div></div>
 
         </div>
@@ -18,3 +21,19 @@
         </div>
     </div>
 </header>
+<div class="menu">
+    <div class="menu_open" ng-class="vm.isMenuShow?'active_menu_open':''">
+        <button ng-click="vm.showMenu()" class="menu-close"><i class="fas fa-times"></i></button>
+        <ul>
+            <li><a ng-click="vm.company()" class="main-link lang" data-key-parent='header' data-key-child='Company'>Company</a>
+            </li>
+            <li><a ng-click="vm.banks()" class="main-link lang" data-key-parent='header'
+                   data-key-child='Banks'>Banks</a>
+            </li>
+            <li><a ng-click="vm.about()" class="main-link lang" data-key-parent='header' data-key-child='About'>About
+                Us</a></li>
+            <li><a ng-click="vm.contacts()" class="main-link lang" data-key-parent='header' data-key-child='Contact'>Contact</a>
+            </li>
+        </ul>
+    </div>
+</div>
