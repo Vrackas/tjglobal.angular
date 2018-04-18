@@ -11,14 +11,12 @@
     function HeaderBlockController($state, $rootScope) {
         let vm = this;
 
-        // vm.test = test;
+        vm.showMenu = showMenu;
+        vm.isMenuShow = false;
 
-        // function test() {
-        //
-        //     $('.menu_open').addClass('active_menu_open');
-        //     // $rootScope.menu = true;
-        //     console.log($rootScope.menu);
-        // }
+        function showMenu() {
+            vm.isMenuShow = !vm.isMenuShow;
+        }
 
     }
 })();
